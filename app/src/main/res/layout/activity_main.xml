@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/backgroud"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <TextView
+        android:id="@+id/hiker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:text="Hiker"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hiker"
+        android:layout_marginStart="10dp"
+        android:padding="5sp"
+        android:text="Longitute"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/LatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logTextView"
+        android:layout_marginStart="10dp"
+        android:padding="5sp"
+        android:text="Latitute"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/AccTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LatTextView"
+        android:layout_marginStart="10dp"
+        android:padding="5sp"
+        android:text="Accuracy"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/altTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AccTextView"
+        android:layout_marginStart="10dp"
+        android:padding="5sp"
+        android:text="Altitute"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/AddTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/altTextView"
+        android:layout_marginStart="10dp"
+        android:padding="5sp"
+        android:text="Address:\n 123 FAck Street \n Fack Town"
+        android:textSize="24sp" />
+</RelativeLayout>
